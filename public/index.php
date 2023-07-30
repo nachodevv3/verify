@@ -9,7 +9,7 @@
     <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('YOUR_RECAPTCHA_SITE_KEY', { action: 'contact' }).then(function (token) {
+            grecaptcha.execute('6Lf5Y2gnAAAAAPrCdJC4_D2kmPvEp9IS1FJoSRfz', { action: 'contact' }).then(function (token) {
                 var recaptchaResponse = document.getElementById('recaptchaResponse');
                 recaptchaResponse.value = token;
             });
@@ -28,7 +28,7 @@
 
                         // Build POST request:
                         $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-                        $recaptcha_secret = 'YOUR_RECAPTCHA_SECRET_KEY';
+                        $recaptcha_secret = '6Lf5Y2gnAAAAAOYnK2EVURrqgxq1cp_cCYjh60jX';
                         $recaptcha_response = $_POST['recaptcha_response'];
 
                         // Make and decode POST request:
